@@ -1,0 +1,47 @@
+footer {
+  margin: 0px 100px;
+  @media screen and (max-width: 1000px) {
+    margin: 0 24px;
+  }
+  .separator {
+    padding: 20px 0;
+    .line-img {
+      width: 100%;
+    }
+  }
+
+  .footer-container {
+    justify-content: space-between;
+    .responsive-view {
+      @media screen and (max-width: 1000px) {
+        padding-bottom: 10px;
+      }
+    }
+    .footer-nav {
+      a {
+        @include menulink;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        padding-right: 40px;
+        @media screen and (max-width: 1000px) {
+          padding: 0px;
+        }
+      }
+    }
+    .footer-info {
+      font-size: 12px;
+      font-weight: 300;
+    }
+    .policies {
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+  }
+  .copyright {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+}

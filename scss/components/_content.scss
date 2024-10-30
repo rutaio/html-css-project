@@ -1,0 +1,129 @@
+main {
+  .hero {
+    height: 100vh;
+    width: 1400px;
+    @media screen and (max-width: 1000px) {
+      height: 100%;
+      width: 900px;
+      @media screen and (max-width: 600px) {
+        width: 500px;
+      }
+    }
+
+    .hero-texts-block {
+      width: 75%;
+      align-content: center;
+      background: $thirdColor;
+      padding: 100px;
+      @include responsive-order-second;
+      .hero-text {
+        padding-right: 300px;
+        @media screen and (max-width: 1000px) {
+          padding: 24px;
+        }
+      }
+    }
+
+    .hero-images-block {
+      width: 35%;
+      align-content: center;
+      @include responsive-order-one;
+      .hero-img {
+        justify-content: right;
+        position: relative;
+        @media screen and (max-width: 1000px) {
+          position: static;
+          @media screen and (max-width: 600px) {
+            justify-content: center;
+          }
+        }
+      }
+      .hero-icon {
+        justify-content: right;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .products {
+    padding: 80px 0;
+    @media screen and (max-width: 1000px) {
+      padding: 40px 0;
+    }
+    h2 {
+      text-align: center;
+    }
+    .product-container {
+      margin: 40px 100px;
+      @media screen and (max-width: 1000px) {
+        margin: 30px;
+      }
+      .product-texts-block {
+        padding: 100px;
+        align-content: center;
+        @include responsive-order-second;
+      }
+      .product-img {
+        width: 550px;
+        @include responsive-order-one;
+      }
+    }
+  }
+
+  .services {
+    text-align: left;
+    margin: 40px 100px;
+    @media screen and (max-width: 1000px) {
+      margin: 20px 40px;
+    }
+    @media screen and (max-width: 600px) {
+      margin: 0px;
+      padding: 40px 0px 0px 24px;
+      background-image: url(../../images/bg.png);
+      width: 65%;
+    }
+    .services-headline {
+      @media screen and (max-width: 1000px) {
+        margin: 30px 0px 30px 30px;
+      }
+      @media screen and (max-width: 600px) {
+        width: 400px;
+        padding: 0px;
+        margin: 24px 0px 24px 24px;
+      }
+    }
+    .services-row {
+      padding: 40px 0;
+      @media screen and (max-width: 1000px) {
+        padding: 10px 12px;
+      }
+      .service-img {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 10px;
+      }
+    }
+    .service-column-wide {
+      width: 800px;
+      height: 600px;
+      padding-right: 20px;
+      @include responsive-box;
+    }
+    .service-column-narrow {
+      width: 400px;
+      height: 600px;
+      @include responsive-box;
+    }
+    .service-column-square-left {
+      width: 600px;
+      height: 600px;
+      padding-right: 20px;
+      @include responsive-box;
+    }
+    .service-column-square-right {
+      width: 600px;
+      height: 600px;
+      @include responsive-box;
+    }
+  }
+}

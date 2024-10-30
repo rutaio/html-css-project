@@ -1,0 +1,27 @@
+button {
+  font-family: $primaryFont;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 12px 24px;
+  &:hover {
+    cursor: pointer;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.black-btn {
+  background: $primaryColor;
+  color: $secondaryColor;
+  border: none;
+  font-size: 16px;
+}
+
+.white-btn {
+  background: $secondaryColor;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+  font-size: 14px;
+}

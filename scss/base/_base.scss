@@ -1,0 +1,79 @@
+body {
+  max-width: 1400px;
+  @media screen and (max-width: 1000px) {
+    width: 900px;
+    @media screen and (max-width: 600px) {
+      width: 500px;
+    }
+  }
+
+  .flex-container {
+    @include flex;
+    @media screen and (max-width: 1000px) {
+      @include flexcolumn;
+      @media screen and (max-width: 600px) {
+        @include flexcolumn;
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  a,
+  li {
+    font-family: $primaryFont;
+    color: $primaryColor;
+    padding-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 200;
+    line-height: 56px;
+    @media screen and (max-width: 600px) {
+      font-size: 32px;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 48px;
+    @media screen and (max-width: 600px) {
+      font-size: 32px;
+    }
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    @media screen and (max-width: 600px) {
+      font-size: 28px;
+    }
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

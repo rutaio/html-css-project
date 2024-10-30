@@ -1,0 +1,13 @@
+.search-container {
+  .search-box {
+    border: none;
+    border-bottom: 1px solid $thirdColor;
+  }
+  .search-btn {
+    border: none;
+    background: $secondaryColor;
+  }
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}
